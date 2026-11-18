@@ -4,9 +4,12 @@ import subprocess
 
 from flask import Flask, jsonify, request
 
+
+
 app = Flask(__name__)
 
 ADMIN_PASSWORD = "admin123"
+SECRET_TOKEN = "abc123"
 
 
 def get_db():
