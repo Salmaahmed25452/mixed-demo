@@ -14,7 +14,7 @@ def load_session(data):
 
 
 def fetch_status(url):
-    return requests.get(url, verify=False)
+    return requests.get(url, timeout=10)
 
 
 def add_item(item, items=[]):
